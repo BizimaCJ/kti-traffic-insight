@@ -1,0 +1,46 @@
+:root {
+  /* Blue palette */
+  --navy-950: #06152b;
+  --navy-900: #0a2540;
+  --navy-800: #0f3260;
+  --blue-700: #1347a8;
+  --blue-600: #1d6fe0;
+  --blue-500: #3b8bf5;
+  --blue-400: #6aa8f8;
+  --blue-300: #93c0fa;
+  --blue-200: #bfd9fc;
+  --blue-100: #dbeafe;
+  --blue-50: #eff6ff;
+
+  /* Surfaces and text */
+  --bg: #f1f6fd;
+  --surface: #ffffff;
+  --border: #dde7f5;
+  --border-strong: #c3d4ee;
+  --text: #0b1b33;
+  --text-soft: #3f5170;
+  --muted: #667896;
+
+  /* Traffic levels: always shown with a label and a meter too, never colour alone */
+  --free: #0e9f6e;
+  --free-bg: #e2f6ed;
+  --free-ink: #065c3d;
+  --moderate: #d99100;
+  --moderate-bg: #fff3d1;
+  --moderate-ink: #744b00;
+  --heavy: #ea580c;
+  --heavy-bg: #ffe8d9;
+  --heavy-ink: #8a2f04;
+  --blocked: #c81e3a;
+  --blocked-bg: #fde3e8;
+  --blocked-ink: #7a0e21;
+
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 1px 2px rgba(10, 37, 64, 0.06), 0 2px 8px rgba(10, 37, 64, 0.04);
+  --shadow: 0 10px 30px rgba(19, 71, 168, 0.1);
+  --shadow-lg: 0 24px 60px rgba(10, 37, 64, 0.22);
+  --font: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
