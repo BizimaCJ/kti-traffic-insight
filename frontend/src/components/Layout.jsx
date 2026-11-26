@@ -50,7 +50,6 @@ export default function Layout() {
       <footer className="footer">
         <div className="footer-inner">
           <div><strong>Kigali Traffic Insight</strong><br />Traffic information and incident alerts for Nyabugogo, Kigali.</div>
-          <div>African Leadership University - formative assignment prototype.<br />It does not control traffic signals or replace traffic officers.</div>
         </div>
       </footer>
     </div>
