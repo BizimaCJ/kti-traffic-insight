@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment (never commit real settings)
+backend/.env
+
+# Node
+frontend/node_modules/
+
+# Local databases and editors
+*.sqlite3
+.vscode/
+.idea/
+.DS_Store
