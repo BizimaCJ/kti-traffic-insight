@@ -120,15 +120,6 @@ frontend/src/  pages, components, context, lib (api client, formatting)
 ```
 In each app: `models.py` (data), `services.py` (business rules), `views.py` (HTTP only), `serializers.py`.
 
-## Where the SRS is followed, and where I made a decision
-
-- Public screens: overview with map, journey planner (origin, destination, departure time), report form (no account), history, alert banners, "Simulated data" label everywhere.
-- Administrators: login/logout, review, verify, reject (reason required), resolve, publish/withdraw alerts, audit log. Every action is logged with the administrator, time and target.
-- Decisions the SRS did not make:
-  - Reports that exactly repeat an earlier one within 10 minutes are refused; similar active reports are accepted and flagged to the administrator ("possible duplicate").
-  - Automatic delay alerts fire when a road reaches 10 minutes of delay, once per rise. They clear by themselves when the delay drops, and an alert for an incident is withdrawn when the incident is resolved.
-  - Only Verified incidents are public. Reporter name and contact are never shown to the public.
-  - A later departure time uses the average of past readings at that hour (needs history: run `backfill`).
   - The map is a schematic drawn from each intersection's `map_x`/`map_y` (no map provider is named in the SRS).
 - The two nearby intersections are **Nyabugogo-Kinamba** and **Nyabugogo-Muhima**. Coordinates can be added at `/django-admin/` (create a superuser with `python manage.py createsuperuser`).
 - Thresholds and limits are in `.env` (see `.env.example`).
